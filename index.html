@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-container-v {
+      background: #eee;
+    }
+
+    /*slider 1*/
+    .sw1-svg-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10%;
+      z-index: 5;
+    }
+    .sw1-svg-icon {
+      animation: floatingArrow 3s infinite;
+    }
+
+    @keyframes floatingArrow {
+      0% {
+          transform: translateY(0);
+        }
+
+      50% {
+          transform: translateY(10px);
+        }
+
+      100% {
+          transform: translateY(0);
+        }
+    }
+
+    .sw1-sl1 {
+      background: url("ren02_v3-1.jpg");
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    .sw1-sl2 {
+      background: url("slider_001-2.jpg");
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    .sw1-sl3 {
+      background: url("slider_003-1-1.jpg");
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    .sw1 h2 {
+      position: absolute;
+      z-index: 5;
+      color: white;
+    }
+
+    /*slider 2 */
+    .sw2-wrapp {
+      width: 40%;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 5;
+      position: absolute;
+      background: #ebedec;
+    }
+    .sw2-block {
+      right: 0;
+      height: 100%;
+      position: absolute;
+      z-index: 99;
+      width: 40%;
+    }
+    .sw2-sl1 {
+      background: url("img_0112.jpg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .sw2-sl2 {
+      background: url("block_2_img_001-2-1.jpg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .sw2-sl3 {
+      background: url("web-1920-–-3-1-1.jpg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+
+    /*slider 3*/
+    .sw3 {
+      width: 60%;
+      position: absolute;
+      right: 0;
+    }
+    .sw3-block {
+      left: 0;
+      height: 100%;
+      position: absolute;
+      z-index: 5;
+      width: 40%;
+      background: #ebedec;
+    }
+    .sw3-sl1 {
+      background: url("lobby_3.jpg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .sw3-sl2 {
+      background: url("img_block_002.jpg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .sw3-sl3 {
+      background: url("lobby_2.jpg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-v">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-h sw1">
+          <h2>Престижный <br> жилой комплекс премиум-класса <br>  в Сокольниках</h2>
+          <div class="sw1-svg-wrap">
+            <div class="sw1-svg-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.695" height="17.27" viewBox="0 0 32.695 17.27"> <g id="next" transform="translate(32.695 -112.557) rotate(90)"> <path id="Path_12655" data-name="Path 12655" d="M129.56,15.7,114.137.272a.925.925,0,1,0-1.309,1.309l14.766,14.766L112.828,31.112a.928.928,0,0,0,.651,1.583.9.9,0,0,0,.651-.274L129.553,17A.92.92,0,0,0,129.56,15.7Z" fill="#fff"></path> </g> </svg>
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide sw1-sl1"></div>
+            <div class="swiper-slide sw1-sl2"></div>
+            <div class="swiper-slide sw1-sl3"></div>
+          </div>
+          <!-- <div class="swiper-pagination swiper-pagination-v"></div> -->
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-h">
+          <div class="sw2-wrapp"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide sw2-sl1">
+              <div class="sw2-block">
+                <h2 class="title-block">Террасы на крыше</h2>
+                <p>Собственный пентхаус с террасой на крыше – мечта для тех, кто ценит эксклюзивность и привык получать от жизни истинное удовольствие. Только представьте: вы наслаждаетесь восхитительными видами на исторический центр столицы за чашечкой кофе и вдыхаете свежий воздух свободы, комфорта и уединения.  Здесь вы почувствуете спокойствие и непередаваемый уют.</p>
+              </div>
+            </div>
+            <div class="swiper-slide sw2-sl2">
+              <div class="sw2-block">
+                <h2 class="title-block">Подземный паркинг</h2>
+                <p>Для удобства жителей и гостей жилого комплекса «Ренессанс» предусмотрены два собственных подземных двухэтажных паркинга общей вместимостью 502 парковочных места. Заезд на парковку осуществляется посредством бесконтактной системы распознавания номеров, а также специального пульта управления. Благодаря продуманному расположению лифтов резиденты жилого комплекса могут спуститься в паркинг прямо из здания</p>
+              </div>
+            </div>
+            <div class="swiper-slide sw2-sl3">
+              <div class="sw2-block">
+                <h2>Фитнес-клуб</h2>
+                <p>Стараясь позаботиться не только о комфорте жителей, но и об их здоровом образе жизни, мы создали собственный закрытый фитнес-клуб, расположенный прямо на территории жилого комплекса. Занятия спортом больше не будут отнимать много времени – все необходимое для поддержания себя в форме есть в вашем доме!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-h"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-h">
+          <div class="sw3-block">
+            <h2>Ваш дом</h2>
+            <p>Что для вас является эталоном настоящего дома? Практичность и функциональность, эстетика и прекрасный вкус архитектора, удобное расположение и наличие необходимой инфраструктуры, престиж и респектабельность. Представьте, что все эти параметры совмещены в одном месте – ЖК Ренессанс.</p>
+          </div>
+          <div class="swiper-wrapper sw3">
+            <div class="swiper-slide sw3-sl1"></div>
+            <div class="swiper-slide sw3-sl2"></div>
+            <div class="swiper-slide sw3-sl3">s</div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-h"></div>
+          <!-- Add Arrows -->
+          <!-- <div class="swiper-button-next"></div> -->
+          <!-- <div class="swiper-button-prev"></div> -->
+        </div>
+      </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div class="swiper-pagination swiper-pagination-h"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- slick -->
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+  <!-- Initialize Swiper -->
+  <script>
+  window.onload = function () {
+
+    var swiperV = new Swiper('.swiper-container-v', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: '.swiper-pagination-v',
+        clickable: true,
+      } 
+    });
+
+    var swiperH = new Swiper('.swiper-container-h', {
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination-h',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+
+    };
+
+
+
+
+    // $(document).ready(function(){
+    //   $('.your-class').slick({
+    //     setting-name: setting-value
+    //   });
+    // });
+  </script>
+</body>
+</html>
