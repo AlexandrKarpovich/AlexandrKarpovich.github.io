@@ -4,6 +4,4 @@
 
 html, css, js (jquery)
 
-использованные библиотеки
-
 fullpage js, animate css, normalize css
