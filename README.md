@@ -2,8 +2,6 @@
 
 # [Portfolio](https://AlexandrKarpovich.github.io)
 
-## 
-
 html, css, js (jquery)
 
 ## использованные библиотеки
