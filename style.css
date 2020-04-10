@@ -537,6 +537,6 @@ textarea.input100 {
   .about__inner {
     width: 80%;
     height: 445px;
-    overflow-x: scroll;
+    overflow-x: scroll; 
   }
 }
